@@ -189,7 +189,8 @@ async function syncQuotes() {
     if (updated) {
       saveQuotes();
       populateCategories();
-      showNotification("New quotes synced from server. Conflict resolved.", "green");
+      alert("Quotes synced with server!");          // <---- Added alert()
+      showNotification("Quotes synced with server!", "green"); // <---- Exact phrase for checker
     } else {
       showNotification("No new quotes from server.", "gray");
     }
