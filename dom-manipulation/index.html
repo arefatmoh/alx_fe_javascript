@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dynamic Quote Generator</title>
 </head>
 <body>
   <h1>Dynamic Quote Generator</h1>
 
-    <select id="categoryFilter" onchange="filterQuotes()">
-  <option value="all">All Categories</option>
-</select>
+  <!-- Category Filter -->
+  <select id="categoryFilter" onchange="filterQuotes()">
+    <option value="all">All Categories</option>
+  </select>
 
-  <div id="quoteDisplay" style="margin-bottom: 20px;"></div>
-  <div id="formContainer" style="margin-top: 20px;"></div>
+  <!-- Quote Display -->
+  <div id="quoteDisplay" style="margin-top: 20px;"></div>
 
-<!-- Add this so the checker sees the text -->
-<button id="exportQuotesButton">Export Quotes</button>
-<input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
-
-
+  <!-- Show Random Quote -->
   <button id="newQuote">Show New Quote</button>
 
- 
+  <!-- Notification Area -->
+  <div id="notification" style="color: green; margin-top: 10px;"></div>
 
+  <!-- Form and Export/Import -->
+  <div id="formContainer" style="margin-top: 20px;"></div>
 
   <script src="script.js"></script>
 </body>
